@@ -1,0 +1,41 @@
+{
+  "name": "identity-reconciliation",
+  "version": "1.0.0",
+  "description": "Bitespeed Backend Task: Identity Reconciliation",
+  "author": "Vishal Kumar 25267239+vishalx360@users.noreply.github.com",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon",
+    "start": "ts-node src/index.ts",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "postinstall": "prisma generate",
+    "resetdb": "npx prisma migrate reset --preview-feature",
+    "updatedb": "npx prisma db push",
+    "studio": "npx prisma studio"
+  },
+  "keywords": [],
+  "license": "MIT",
+  "dependencies": {
+    "@fastify/autoload": "^5.8.2",
+    "@fastify/swagger": "^8.14.0",
+    "@fastify/swagger-ui": "^2.1.0",
+    "@joggr/fastify-prisma": "^1.2.3",
+    "@prisma/client": "^5.14.0",
+    "fastify": "^4.27.0",
+    "fastify-plugin": "^4.5.1",
+    "fastify-type-provider-zod": "^1.2.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.13",
+    "cross-env": "^7.0.3",
+    "fastify-tsconfig": "^2.0.0",
+    "nodemon": "^3.1.2",
+    "prettier": "^3.2.5",
+    "prisma": "^5.14.0",
+    "rimraf": "^5.0.7",
+    "ts-node": "^10.9.2",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.4.5"
+  }
+}
